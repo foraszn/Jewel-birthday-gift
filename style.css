@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #fff0f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .countdown-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .days-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .day-button {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #ffb6c1;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .day-button:hover {
+    background-color: #ff99aa;
+  }
+  
+  .day-button.locked {
+    background-color: #ddd;
+    cursor: not-allowed;
+  }
+  
